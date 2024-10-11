@@ -4,6 +4,7 @@ import 'package:meditation_app/auth/presentation/manger/auth_provider.dart';
 import 'package:meditation_app/get_started_screen/presentation/screen/topics_screen.dart';
 import 'package:meditation_app/auth/presentation/screens/login_screen.dart';
 import 'package:meditation_app/layout_screen/presentation/manger/layout_provider.dart';
+import 'package:meditation_app/layout_screen/presentation/screens/home_screen.dart';
 import 'package:meditation_app/layout_screen/presentation/screens/layout_screen.dart';
 import 'package:provider/provider.dart';
 import 'auth/presentation/screens/signup_screen.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
         TopicsScreen.routename:(_)=>TopicsScreen(),
         ReminderScreen.routename:(_)=>ReminderScreen(),
         LayoutScreen.routename:(_)=>LayoutScreen(),
+        HomeScreen.routename:(_)=>HomeScreen(),
       },
       initialRoute: TopicsScreen.routename,
     );

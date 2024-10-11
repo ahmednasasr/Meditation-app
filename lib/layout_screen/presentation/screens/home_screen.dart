@@ -6,7 +6,7 @@ import 'focus_details.dart';
 import 'happiness_details.dart';
 
 class HomeScreen extends StatefulWidget {
-  static const String routename="Home";
+  static const String routename="Home screen";
   const HomeScreen({super.key});
 
   @override
