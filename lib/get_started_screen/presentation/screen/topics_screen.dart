@@ -38,7 +38,7 @@ class _TopicsScreenState extends State<TopicsScreen> {
             const SizedBox(height: 30),
             const Text(
               """What Brings you
-             "to Silent Moon?""",
+        to Silent Moon?""",
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 30,

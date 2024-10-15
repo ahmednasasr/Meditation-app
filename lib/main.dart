@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:meditation_app/auth/presentation/manger/auth_provider.dart';
+import 'package:meditation_app/get_started_screen/presentation/screen/getstarted_screen.dart';
 import 'package:meditation_app/get_started_screen/presentation/screen/topics_screen.dart';
 import 'package:meditation_app/auth/presentation/screens/login_screen.dart';
 import 'package:meditation_app/layout_screen/presentation/manger/layout_provider.dart';
@@ -45,8 +46,9 @@ class MyApp extends StatelessWidget {
         ReminderScreen.routename:(_)=>ReminderScreen(),
         LayoutScreen.routename:(_)=>LayoutScreen(),
         HomeScreen.routename:(_)=>HomeScreen(),
+        GetstartedScreen.routename:(_)=>GetstartedScreen(),
       },
-      initialRoute: TopicsScreen.routename,
+      initialRoute: StartScreen.routename,
     );
   }
 }

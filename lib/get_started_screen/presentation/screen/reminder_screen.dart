@@ -62,16 +62,18 @@ class _ReminderScreenState extends State<ReminderScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: List.generate(7, (index) {
-                return ChoiceChip(
-                  label: Text(
-                    ["SU", "M", "T", "W", "TH", "F", "S"][index],
+                return Expanded(
+                  child: ChoiceChip(
+                    label: Text(
+                      ["SU", "M", "T", "W", "TH", "F", "S"][index],
+                    ),
+                    selected: provider.selectedDays[index],
+                    onSelected: (bool selected) {
+                      setState(() {
+                        provider.selectedDays[index] = selected;
+                      });
+                    },
                   ),
-                  selected: provider.selectedDays[index],
-                  onSelected: (bool selected) {
-                    setState(() {
-                      provider.selectedDays[index] = selected;
-                    });
-                  },
                 );
               }),
             ),

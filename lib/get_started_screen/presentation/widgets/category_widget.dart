@@ -25,12 +25,14 @@ class CategoryWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset("${customeCon.pathImg}", scale: 1.5),
+            Expanded(child: Image.asset("${customeCon.pathImg}", scale: 1.5)),
             Center(
-                child: Text(
-                  customeCon.title,
-                  style: const TextStyle(
-                      fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
+                child: Expanded(
+                  child: Text(
+                    customeCon.title,
+                    style: const TextStyle(
+                        fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
                 )),
           ],
         ),

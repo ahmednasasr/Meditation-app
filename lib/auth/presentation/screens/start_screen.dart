@@ -34,8 +34,8 @@ class _StartScreenState extends State<StartScreen> {
             ),
             Text(
               """
-        Thousand of people are usign silent moon  
-                          for smalls meditation 
+      Thousand of people are usign silent 
+      moon for smalls meditation 
             """,
               style: TextStyle(color: Color(0xffA1A4B2), fontSize: 15),
             ),
