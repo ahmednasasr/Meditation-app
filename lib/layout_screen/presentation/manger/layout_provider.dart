@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:meditation_app/layout_screen/presentation/screens/meditate_screen.dart';
 import 'package:meditation_app/layout_screen/presentation/screens/music_screen.dart';
-import 'package:meditation_app/layout_screen/presentation/screens/sleep_screen.dart';
 
-import '../screens/home_screen.dart';
+import '../screens/home/home_screen.dart';
+import '../screens/sleep/sleep_screen.dart';
 
 class LayoutProvider extends ChangeNotifier {
   int selectedIndex = 0;

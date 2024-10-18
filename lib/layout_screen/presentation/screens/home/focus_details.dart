@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meditation_app/layout_screen/presentation/screens/happiness_details.dart';
+import 'package:meditation_app/layout_screen/presentation/screens/home/happiness_details.dart';
 
 class FocusDetails extends StatelessWidget {
   const FocusDetails({super.key});

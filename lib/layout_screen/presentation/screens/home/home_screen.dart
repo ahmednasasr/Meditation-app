@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meditation_app/auth/presentation/screens/login_screen.dart';
 import 'package:meditation_app/layout_screen/presentation/widgets/custome_card.dart';
 import 'package:meditation_app/layout_screen/presentation/widgets/custome_card2.dart';
 
