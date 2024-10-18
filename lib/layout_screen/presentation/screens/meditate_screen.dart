@@ -30,7 +30,7 @@ class _HomeScreenState extends State<MeditateScreen> {
             ),
             Text(
               "we can learn how to recognize when our minds are doing their normal everyday acrobatics.",
-              style: TextStyle(color: Color(0xffA0A3B1)),
+              style: TextStyle(color: Color(0xffA0A3B1),fontWeight: FontWeight.bold),
             ),
             SizedBox(
               height: 20,
@@ -43,7 +43,13 @@ class _HomeScreenState extends State<MeditateScreen> {
                       TabBar(
                           dividerColor: Colors.transparent,
                           unselectedLabelColor: Color(0xffA0A3B1),
-                          labelStyle: TextStyle(color: Color(0xff8E97FD)),
+                          labelColor: Colors.white,
+                          labelStyle: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                          indicator: BoxDecoration(
+                            color: Color(0xff8E97FD),
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+
                           tabs: [
                             Tab(
                               child: Column(

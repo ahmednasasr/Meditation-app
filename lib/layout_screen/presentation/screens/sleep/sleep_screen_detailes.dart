@@ -59,7 +59,7 @@ class _SleepScreenDetailesState extends State<SleepScreenDetailes> {
                   ),
                   Positioned(
                       top: 60,
-                      left: 90,
+                      left: 60,
                       child: Center(
                           child: Text(
                         "The ocean moon",
@@ -70,7 +70,7 @@ class _SleepScreenDetailesState extends State<SleepScreenDetailes> {
                       ))),
                   Positioned(
                     top: 100,
-                    left: 90,
+                    left: 70,
                     child: Center(
                         child: Text(
                       "Non-stop 8- hour mixes of our \n most popular sleep audio",

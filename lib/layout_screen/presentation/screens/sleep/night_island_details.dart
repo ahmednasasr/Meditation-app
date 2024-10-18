@@ -7,14 +7,15 @@ class NightIslandDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF03174C),
-      body: Column(
+      body: SingleChildScrollView(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               height: 300,
               width: double.infinity,
               child: Image.asset(
-                'assets/images/q11.png',
+                'assets/images/سلسل.png',
                 fit: BoxFit.cover,
               ),
             ),
@@ -22,10 +23,9 @@ class NightIslandDetails extends StatelessWidget {
             Text(
               "Night Island",
               style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Colors.white
-              ),
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
             ),
             SizedBox(height: 10),
             Text(
@@ -33,26 +33,45 @@ class NightIslandDetails extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Colors.white),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.favorite,color: Color(0xffFF84A2),),
-                Text("24.234 Favorits",style: TextStyle(color: Colors.white),),
-                Icon(Icons.music_note,color: Color(0xff7FD2F2),),
-                Text("34.234 Lestening",style: TextStyle(color: Colors.white),),
+                Icon(
+                  Icons.favorite,
+                  color: Color(0xffFF84A2),
+                ),
+                SizedBox(width: 5),
+                Text(
+                  "24.234 Favorits",
+                  style: TextStyle(color: Colors.white),
+                ),
+                SizedBox(width: 20),
+                Icon(
+                  Icons.music_note,
+                  color: Color(0xff7FD2F2),
+                ),
+                SizedBox(width: 5),
+                Text(
+                  "34.234 Lestening",
+                  style: TextStyle(color: Colors.white),
+                ),
               ],
             ),
             SizedBox(height: 20),
-            Text("Related",style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
-            SizedBox(height: 30,),
+            Text(
+              "Related",
+              style: TextStyle(
+                  color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 30),
             SizedBox(
               height: 200,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
                   InkWell(
-                      onTap: () {
-                      },
+                      onTap: () {},
                       child: Column(
                         children: [
                           Container(
@@ -65,17 +84,19 @@ class NightIslandDetails extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          Text("Moon Clouds",style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white
-                          ),),
-                          Text("45 MIN SLEEP MUSIC",style: TextStyle(
-                              fontSize: 10,
-                              color: Colors.white
-                          ),),
+                          Text(
+                            "Moon Clouds",
+                            style: TextStyle(
+                                fontSize: 15, color: Colors.white),
+                          ),
+                          Text(
+                            "45 MIN SLEEP MUSIC",
+                            style: TextStyle(
+                                fontSize: 10, color: Colors.white),
+                          ),
                         ],
                       )),
-                  SizedBox(width: 10,),
+                  SizedBox(width: 10),
                   InkWell(
                       onTap: () {
                         Navigator.push(
@@ -97,24 +118,24 @@ class NightIslandDetails extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          Text("Sweet Sleep",style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white
-                          ),),
-                          Text("45 MIN SLEEP MUSIC",style: TextStyle(
-                              fontSize: 10,
-                              color: Colors.white
-                          ),),
+                          Text(
+                            "Sweet Sleep",
+                            style: TextStyle(
+                                fontSize: 15, color: Colors.white),
+                          ),
+                          Text(
+                            "45 MIN SLEEP MUSIC",
+                            style: TextStyle(
+                                fontSize: 10, color: Colors.white),
+                          ),
                         ],
                       )),
                 ],
               ),
             ),
-            Spacer(),
+            SizedBox(height: 30),
             ElevatedButton(
-              onPressed: () {
-
-              },
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xffFFE7BF),
                 shape: RoundedRectangleBorder(
@@ -122,15 +143,19 @@ class NightIslandDetails extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 40.0, vertical: 10.0),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 40.0, vertical: 10.0),
                 child: Text(
                   "Play",
-                  style: TextStyle(color: Color(0xFF03174C), fontSize: 18),
+                  style: TextStyle(
+                      color: Color(0xFF03174C), fontSize: 18),
                 ),
               ),
             ),
+            SizedBox(height: 30), // For extra padding at the bottom
           ],
         ),
+      ),
     );
   }
 }

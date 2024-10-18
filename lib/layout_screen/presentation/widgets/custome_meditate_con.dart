@@ -23,7 +23,7 @@ class CustomeMeditateCon extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Expanded(child: Image.asset("${customeMeditate.pathImg}", scale: 1.4)),
+              Expanded(child: Image.asset("${customeMeditate.pathImg}",width: customeMeditate.width,height: customeMeditate.height,)),
               Center(
                   child: Expanded(
                     child: Text(
