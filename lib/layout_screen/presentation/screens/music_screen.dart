@@ -11,8 +11,10 @@ class MusicScreen extends StatefulWidget {
 class _HomeScreenState extends State<MusicScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.green,
+    return Scaffold(
+      body: Container(
+        color: Colors.green,
+      ),
     );
   }
 }

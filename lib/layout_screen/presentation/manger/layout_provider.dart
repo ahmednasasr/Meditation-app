@@ -5,12 +5,17 @@ import 'package:meditation_app/layout_screen/presentation/screens/sleep_screen.d
 
 import '../screens/home_screen.dart';
 
-class LayoutProvider extends ChangeNotifier{
-  int selectedIndex=0;
-  List<Widget> screens =[
+class LayoutProvider extends ChangeNotifier {
+  int selectedIndex = 0;
+  List<Widget> screens = [
     HomeScreen(),
     SleepScreen(),
     MeditateScreen(),
     MusicScreen(),
   ];
+  void updateIndex(int index) {
+    selectedIndex = index;
+    notifyListeners();
+  }
 }
+

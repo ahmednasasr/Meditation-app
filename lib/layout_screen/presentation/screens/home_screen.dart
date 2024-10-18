@@ -71,120 +71,143 @@ class _HomeScreenState extends State<HomeScreen>
       child: Scaffold(
         body: Stack(
           children: [
-            Column(
-              children: [
-                SizedBox(height: 60),
-                Text(
-                  "Good Morning ,Afsar",
-                  style: TextStyle(
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  SizedBox(height: 60),
+                  Text(
+                    "Good Morning, Ahmed",
+                    style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black),
-                ),
-                Text(
-                  "we wish You Have a Good Day",
-                  style: TextStyle(fontSize: 15, color: Color(0xffA1A4B2)),
-                ),
-                SizedBox(height: 15),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Expanded(
-                        child: CustomeCard(
-                      image: "assets/images/ttttt.png",
-                      color: Color(0xff8E97FD),
-                      name: 'Basics',
-                      onPressed: () {
-                        startRocketLaunch(FocusDetails());
-                      },
-                    )),
-                    SizedBox(width: 10),
-                    Expanded(
-                        child: CustomeCard(
-                      image: "assets/images/hhhh.png",
-                      color: Color(0xffFFDB9D),
-                      name: 'Relaxation',
-                      onPressed: () {
-                        startRocketLaunch(
-                            HappinessDetails()); // تحريك الصاروخ والانتقال إلى FocusDetails
-                      },
-                    )),
-                  ],
-                ),
-                SizedBox(height: 20),
-                Container(
-                  height: 100,
-                  width: double.infinity,
-                  color: Color(0xff333242),
-                  child: Stack(
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    "We wish You Have a Good Day",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Color(0xffA1A4B2),
+                    ),
+                  ),
+                  SizedBox(height: 15),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Image(image: AssetImage("assets/images/QQQ.png")),
-                      Positioned(
+                      Expanded(
+                        child: CustomeCard(
+                          image: "assets/images/777.png",
+                          color: Color(0xff8E97FD),
+                          name: 'Basics',
+                          onPressed: () {
+                            startRocketLaunch(FocusDetails());
+                          },
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: CustomeCard(
+                          image: "assets/images/hhhh.png",
+                          color: Color(0xffFFDB9D),
+                          name: 'Relaxation',
+                          onPressed: () {
+                            startRocketLaunch(HappinessDetails());
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20),
+                  Container(
+                    height: 100,
+                    width: double.infinity,
+                    color: Color(0xff333242),
+                    child: Stack(
+                      children: [
+                        Image(image: AssetImage("assets/images/QQQ.png")),
+                        Positioned(
                           left: 200,
                           child: Image(
-                              image: AssetImage("assets/images/EEEEE.png"))),
-                      Center(
-                        child: Text(
-                          "Daily Thought",
-                          style: TextStyle(
+                            image: AssetImage("assets/images/EEEEE.png"),
+                          ),
+                        ),
+                        Center(
+                          child: Text(
+                            "Daily Thought",
+                            style: TextStyle(
                               color: Colors.white,
                               fontSize: 20,
-                              fontWeight: FontWeight.bold),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
-                      ),
-                      Positioned(
-                        left: 290,
-                        top: 30,
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.play_circle),
-                          color: Colors.white,
+                        Positioned(
+                          left: 290,
+                          top: 30,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.play_circle),
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-                SizedBox(height: 15),
-                Text(
-                  "Recommended For You ",
-                  style: TextStyle(
+                  SizedBox(height: 15),
+                  Text(
+                    "Recommended For You",
+                    style: TextStyle(
                       fontSize: 25,
                       color: Colors.black,
-                      fontWeight: FontWeight.bold),
-                ),
-                SizedBox(height: 40),
-                Expanded(
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => FocusDetails()),
-                          );
-                        },
-                        child: CustomeCard2("assets/images/Mask Group.png",
-                            "Foucs", "MEDITATION3-10 MIN"),
-                      ),
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HappinessDetails()),
-                          );
-                        },
-                        child: CustomeCard2("assets/images/Group 24.png",
-                            "Hppiness", "MEDITATION3-10 MIN"),
-                      ),
-                      CustomeCard2("assets/images/Mask Group.png", "Foucs",
-                          "MEDITATION 3-10 MIN"),
-                    ],
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-              ],
+                  SizedBox(height: 40),
+                  SizedBox(
+                    height: 200,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => FocusDetails(),
+                              ),
+                            );
+                          },
+                          child: CustomeCard2(
+                            "assets/images/Mask Group.png",
+                            "Focus",
+                            "MEDITATION 3-10 MIN",
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HappinessDetails(),
+                              ),
+                            );
+                          },
+                          child: CustomeCard2(
+                            "assets/images/Group 24.png",
+                            "Happiness",
+                            "MEDITATION 3-10 MIN",
+                          ),
+                        ),
+                        CustomeCard2(
+                          "assets/images/Mask Group.png",
+                          "Focus",
+                          "MEDITATION 3-10 MIN",
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
             if (showRocket) _buildRocketAnimation(),
           ],
@@ -193,18 +216,18 @@ class _HomeScreenState extends State<HomeScreen>
     );
   }
 
-  // دالة لعرض الصاروخ المتحرك
+
   Widget _buildRocketAnimation() {
     return AnimatedBuilder(
       animation: _animation,
       builder: (context, _) {
         return Positioned(
           bottom: MediaQuery.of(context).size.height * _animation.value,
-          left: MediaQuery.of(context).size.width * 0.4,
+          left: MediaQuery.of(context).size.width * 0.2,
           child: Image.asset(
             'assets/images/rocket.png',
-            width: 100,
-            height: 100,
+            width: 200,
+            height: 200,
           ),
         );
       },

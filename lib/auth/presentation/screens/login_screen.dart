@@ -48,7 +48,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                         const SizedBox(height: 20),
-                        // زر Google
                         Container(
                           height: 70,
                           width: double.infinity,
@@ -66,7 +65,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                         const SizedBox(height: 10),
-                        // زر Facebook
                         Container(
                           height: 70,
                           width: double.infinity,

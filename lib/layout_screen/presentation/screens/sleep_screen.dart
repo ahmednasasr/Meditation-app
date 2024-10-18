@@ -11,8 +11,10 @@ class SleepScreen extends StatefulWidget {
 class _HomeScreenState extends State<SleepScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.orange,
+    return Scaffold(
+      body: Container(
+        color: Colors.orange,
+      ),
     );
   }
 }

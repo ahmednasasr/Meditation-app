@@ -8,14 +8,13 @@ class GetstartedScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF8E97FD), // اللون البنفسجي للخلفية
+      backgroundColor: Color(0xFF8E97FD),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const SizedBox(height: 60),
-            // الشعار والنصوص
             Text(
               'Silent Moon',
               style: TextStyle(
@@ -26,7 +25,7 @@ class GetstartedScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'Hi Afsar, Welcome\nto Silent Moon',
+              'Hi Ahmed, Welcome\nto Silent Moon',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white,

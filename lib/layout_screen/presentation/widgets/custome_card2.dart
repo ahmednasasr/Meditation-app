@@ -15,10 +15,11 @@ class _CustomeCard2State extends State<CustomeCard2> {
   @override
   Widget build(BuildContext context) {
     return  Container(
-        height: 100,
+        height: 150,
         width: 200,
         child: Column(
           children: [
+            SizedBox(height: 20,),
             Image(image: AssetImage(widget.image)),
             Text(widget.title1),
             Text(widget.title2),
